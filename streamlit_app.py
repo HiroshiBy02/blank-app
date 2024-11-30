@@ -49,7 +49,8 @@ while True:
             yaxis_title="Amplitud (milivoltios)",
             xaxis=dict(range=[0, window_size])  # Mantener el eje X con un rango fijo
         )
-        placeholder.plotly_chart(fig)
+        # Usar un ID único para cada gráfico
+        placeholder.plotly_chart(fig, key=f"ecg_plot_{time.time()}")  # Tiempo como parte del key
     else:
         st.write("No se encontraron datos en Firebase.")
     
