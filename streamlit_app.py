@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import time
 
 # URL de Firebase para leer los datos
-firebase_url = "https://ecg-database2-default-rtdb.firebaseio.com/"
+firebase_url = "https://ecg-database2-default-rtdb.firebaseio.com/ecg_data.json"
 
 # Frecuencia de muestreo (250 Hz)
 sampling_rate = 250
